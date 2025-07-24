@@ -1,0 +1,158 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	--primary-text: #013289;
+	--primary-color: #4154f1;
+	--primary-variant-color: #5969f3;
+	--primary-light-color: #6a75db;
+	--primary-light-opacity: #a0a9ffe2;
+	--primary-dark-color: #012970;
+	--black: #000;
+	--black-bg: #1b1e29;
+	--white: #fff;
+	--yellow: #ffea00;
+	--secondary-color: #ff715b;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+}
+
+a {
+	color: var(--black);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Jost", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+	text-transform: uppercase;
+	color: var(--primary-text);
+}
+
+.flex_center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tc_main {
+	margin: 20px 0;
+	width: 500px;
+	max-width: 100%;
+	height: 550px;
+	background: var(--white);
+	text-align: center;
+	border-radius: 3px;
+}
+
+.tc_main .title {
+	color: var(--primary-text);
+	margin-bottom: 5px;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.tc_main .tc_content .tc_bottom .title {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.tc_main .tc_content {
+	width: 100%;
+	margin: 35px 0;
+	height: calc(550px - 150px);
+}
+
+.tc_main .tc_btns {
+	width: 100%;
+	height: 80px;
+	padding: 21px 0;
+	box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tc_main .tc_content .tc_top {
+	margin: 0 35px 35px;
+}
+
+.tc_main .tc_content .tc_bottom {
+	padding: 0 35px;
+	overflow: auto;
+	height: calc(100% - 210px);
+}
+
+.tc_main .tc_content .tc_top .icon {
+	font-size: 42px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: var(--primary-text);
+}
+
+.tc_main .tc_content .tc_top .info {
+	color: var(--black);
+}
+
+.tc_main .tc_content .tc_bottom .info p {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.tc_main .tc_btns button {
+	width: 125px;
+	padding: 10px;
+	margin: 0 10px;
+	border: 0;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: all 0.5s ease;
+}
+
+.tc_main .tc_btns button.accept {
+	background: var(--primary-text);
+	color: var(--white);
+}
+
+.tc_main .tc_btns button.decline {
+	border: 1px solid var(--primary-text);
+	background: transparent;
+	color: var(--primary-light-opacity);
+	color: var(--black);
+}
+
+.tc_main .tc_btns button.decline:hover {
+	background: var(--primary-light-color);
+	color: var(--white);
+}
+
+.tc_main .tc_btns button.accept:hover {
+	background: var(--primary-light-color);
+}

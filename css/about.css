@@ -1,0 +1,224 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	--primary-text: #013289;
+	--primary-color: #4154f1;
+	--primary-variant-color: #5969f3;
+	--primary-light-color: #6a75db;
+	--primary-light-opacity: #a0a9ffe2;
+	--primary-dark-color: #012970;
+	--black: #000;
+	--black-bg: #1b1e29;
+	--white: #fff;
+	--yellow: #ffea00;
+	--secondary-color: #ff715b;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+}
+
+a {
+	color: var(--black);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Jost", sans-serif;
+}
+
+.secondary-heading {
+	color: var(--primary-text);
+	text-align: center;
+	font-size: 24px;
+}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+	padding: 12px 0;
+	text-align: center;
+}
+
+.clients img {
+	max-width: 45%;
+	transition: all 0.4s ease-in-out;
+	display: inline-block;
+	padding: 15px 0;
+}
+
+.img-card {
+	background: #fff;
+	box-shadow: 0px 0 30px rgba(1, 41, 112, 0.2);
+}
+
+.clients img:hover {
+	filter: none;
+	transform: scale(1.2);
+	overflow: hidden;
+}
+
+@media (max-width: 768px) {
+	.clients img {
+		max-width: 40%;
+	}
+}
+
+/*--------------------------------------------------------------
+# Who we are
+--------------------------------------------------------------*/
+.about-us {
+	margin-top: 50px;
+}
+
+.about-us .content {
+	background-color: #f6f9ff;
+	padding: 40px;
+}
+
+.about-us-number {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--primary-color);
+	margin-bottom: 24px;
+}
+
+.about-us h3 {
+	font-weight: 700;
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+
+.about-us h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--primary-dark-color);
+	margin-bottom: 20px;
+}
+
+.about-us p {
+	margin: 15px 0 30px 0;
+	line-height: 24px;
+}
+
+/*--------------------------------------------------------------
+
+# Team
+--------------------------------------------------------------*/
+.team {
+	background: var(--white);
+	padding: 60px 0;
+}
+
+.team .member {
+	overflow: hidden;
+	text-align: center;
+	border-radius: 5px;
+	background: var(--white);
+	box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+	transition: 0.3s;
+}
+
+.team .member .member-img {
+	position: relative;
+	overflow: hidden;
+}
+
+.team .member .member-img:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../img/team/team-shape.svg) no-repeat center bottom;
+	background-size: contain;
+	z-index: 1;
+}
+
+.team .member .social {
+	position: absolute;
+	right: -100%;
+	top: 30px;
+	opacity: 0;
+	border-radius: 4px;
+	transition: 0.5s;
+	background: rgba(255, 255, 255, 0.3);
+	z-index: 2;
+}
+
+.team .member .social a {
+	transition: color 0.3s;
+	color: rgba(1, 51, 137, 0.5);
+	margin: 15px 12px;
+	display: block;
+	line-height: 0;
+	text-align: center;
+}
+
+.team .member .social a:hover {
+	color: rgba(1, 51, 137, 0.8);
+}
+
+.team .member .social i {
+	font-size: 18px;
+}
+
+.team .member .member-info {
+	padding: 10px 15px 20px 15px;
+}
+
+.team .member .member-info h4 {
+	font-weight: 700;
+	margin-bottom: 5px;
+	font-size: 20px;
+	color: var(--primary-dark-color);
+}
+
+.team .member .member-info span {
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	color: #aaaaaa;
+}
+
+.team .member .member-info p {
+	font-style: italic;
+	font-size: 14px;
+	padding-top: 15px;
+	line-height: 26px;
+	color: #5e5e5e;
+}
+
+.team .member:hover {
+	transform: scale(1.08);
+	box-shadow: 0px 0 30px rgba(1, 51, 137, 0.1);
+}
+
+.team .member .social {
+	right: 8px;
+	opacity: 1;
+}

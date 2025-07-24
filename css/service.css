@@ -1,0 +1,88 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	--primary-text: #013289;
+	--primary-color: #4154f1;
+	--primary-variant-color: #5969f3;
+	--primary-light-color: #6a75db;
+	--primary-light-opacity: #a0a9ffe2;
+	--primary-dark-color: #012970;
+	--black: #000;
+	--black-bg: #1b1e29;
+	--white: #fff;
+	--yellow: #ffea00;
+	--secondary-color: #ff715b;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+}
+
+a {
+	color: var(--black);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Jost", sans-serif;
+}
+
+.secondary-heading {
+	color: var(--primary-text);
+	text-align: center;
+	font-size: 24px;
+}
+
+/*--------------------------------------------------------------
+# How we work
+--------------------------------------------------------------*/
+.work .content {
+	background-color: #f6f9ff;
+	padding: 40px;
+}
+
+.work-number {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--primary-color);
+	margin-bottom: 24px;
+}
+
+.work h3 {
+	font-weight: 700;
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+
+.work h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--primary-dark-color);
+	margin-bottom: 20px;
+}
+
+.work p {
+	margin: 15px 0 30px 0;
+	line-height: 24px;
+}
